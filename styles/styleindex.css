@@ -1,0 +1,210 @@
+@import url('https://db.onlinewebfonts.com/c/917a69d24b88e2d4d2ca803c0605bd59?family=Cera+PRO+Regular');
+@import url('https://fonts.googleapis.com/css2?family=Micro+5&display=swap');
+
+:root {
+    --cor-principal: #ffffff;
+    --cor-secundaria: #000000; 
+    --cor-terciaria: #ffcf00;
+    --fonte-principal: "Cera PRO Regular", sans-serif; font-style: normal; ;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body{
+height: 100vh;
+box-sizing: border-box;
+padding: 0;
+margin: 0;
+background-color: var(--cor-principal);
+}
+
+ /* Tela Inicial */
+.container_pai_inicio {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 17%;
+    color: var(--cor-clara);
+    height: 20%;
+    margin-bottom: 35px;
+}
+
+.img {
+    display: flex;
+    justify-content: start;
+    align-items: start;
+    margin-left: 500px;
+    width: 1%;
+    height: 1%;
+    filter: drop-shadow( 1px 1px 4px);
+}
+
+.h1_index {
+    font-size: 250%;
+    font-family: var(--fonte-principal);
+    margin-bottom: 2%;
+}
+
+.p_index {
+    font-size: 150%;
+    font-family: var(--fonte-principal);
+    font-weight: none;
+}
+
+.entrar {
+    font-family: var(--fonte-principal);
+    font-weight: 0;
+    text-decoration: none;
+    font-size: 120%;
+    color: var(--cor-secundaria);
+    background-color:var(--cor-terciaria);
+    border-radius: 5px;
+    padding: 1% 5%;
+    transition: all 2s;
+    margin-top: 3%;
+}
+
+.entrar:hover {
+    background-color:var(--cor-secundaria);
+    color: var(--cor-principal);
+    transform: scale(1.3);
+}
+
+.rodape {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 10%;
+    position: fixed;
+    padding-top: 18%;
+    font-size: 170%;
+    margin-top: 1%;
+}
+ div {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--cor-secundaria);
+    gap: 10px;
+ }
+    a {
+        color: var(--cor-principal);
+    }
+
+
+/*Tela tablet*/
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+
+ /* Tela Inicial */
+.container_pai_inicio {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 25%;
+    color: var(--cor-clara);
+    height: 60%;
+    margin-bottom: 100px;
+}
+
+.img {
+display: none;
+}
+
+.h1_index {
+    font-size: 265%;
+    font-family: var(--fonte-principal);
+    margin-bottom: 2%;
+}
+
+.p_index {
+    font-size: 200%;
+    font-family: var(--fonte-principal);
+    font-weight: none;
+}
+
+.entrar {
+    font-family: var(--fonte-principal);
+    font-weight: 0;
+    text-decoration: none;
+    font-size: 180%;
+    color: var(--cor-secundaria);
+    background-color:var(--cor-terciaria);
+    border-radius: 5px;
+    padding: 3% 10%;
+    transition: all 2s;
+    margin-top: 3%;
+}
+
+.entrar:hover {
+    background-color:var(--cor-secundaria);
+    color: var(--cor-principal);
+}
+
+.rodape {
+    display: none;
+}
+
+}
+
+/*Tela celular*/
+@media screen and (max-width: 767px) {
+ /* Tela Inicial */
+ .container_pai_inicio {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: var(--cor-clara);
+    height: 60%;
+    margin-top: 25%;
+}
+
+.img {
+display: none;
+}
+
+.h1_index {
+    font-size: 180%;
+    text-align: center;
+    font-family: var(--fonte-principal);
+    margin-bottom: 2%;
+}
+
+.p_index {
+    font-size: 120%;
+    text-align: center;
+    font-family: var(--fonte-principal);
+    font-weight: none;
+}
+
+.entrar {
+    font-family: var(--fonte-principal);
+    font-weight: 0;
+    text-decoration: none;
+    font-size: 150%;
+    color: var(--cor-secundaria);
+    background-color:var(--cor-terciaria);
+    border-radius: 5px;
+    padding: 3% 10%;
+    transition: all 2s;
+    margin-top: 10%;
+}
+
+.entrar:hover {
+    background-color:var(--cor-secundaria);
+    color: var(--cor-principal);
+}
+
+.rodape {
+    display: none;
+}  
+}

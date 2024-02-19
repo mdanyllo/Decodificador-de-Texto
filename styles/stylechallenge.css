@@ -1,0 +1,568 @@
+@import url('https://fonts.googleapis.com/css2?family=Micro+5&display=swap');
+@import url('https://db.onlinewebfonts.com/c/917a69d24b88e2d4d2ca803c0605bd59?family=Cera+PRO+Regular');
+
+:root {
+    --cor-principal: #ffffff;
+    --cor-secundaria: #000000; 
+    --cor-terciaria: #ffcf00;
+    --fonte-principal: "Cera PRO Regular", sans-serif; font-style: normal; ;
+}
+
+*, body{
+    height: 100vh;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    background-color: var(--cor-principal);
+    }
+
+/*Tela Desafio*/
+
+.container_pai_challenge {
+    display: flex;   
+    align-items: center;
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+    margin-top: 5%;
+    width: 14%;
+    font-family: "Micro 5", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 550%;
+}
+.logo:hover {
+    cursor:default;
+}
+
+.inputs_group {
+  display: flex ;
+  flex-direction: column;
+  width: 45%;
+  height: 55%;
+  margin-right: 14%;
+}
+.texto_area {
+    resize: none;
+    border: none;
+    outline: none;
+    font-family: var(--fonte-principal);
+   font-size: 160%;
+   white-space: pre-line;
+   margin-left: 4%;
+   width: 100%;
+   height: 100%;
+   padding-bottom: 476px;
+   overflow: hidden;
+}
+.aviso_group {
+    display: flex;
+    height: 10%;
+    width: 40%;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: start;
+    
+}
+
+.aviso {
+  font-family:Arial, Helvetica, sans-serif;
+  font-size: 90%;
+  margin-top: 0.5%;
+  margin-left: 2%;
+  max-height: 100%;
+}
+.aviso_icon {
+    height: 40%;    
+}
+
+.inputs_group_buttons {
+    height: 10%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+    margin-left: 2%;
+}
+.input_botao0 {
+    height: 150%;
+    padding: 2% 15%;
+    border-radius: 30px;
+    font-size: 120%;
+    font-family: var(--fonte-principal);
+    color: var(--cor-principal);
+    background-color: var(--cor-terciaria);
+    transition: all 3s;
+    color: var(--cor-secundaria);
+}
+.input_botao1 {
+    height: 150%;
+    padding: 2% 12%;
+    border-radius: 30px;
+    font-size: 120%;
+    font-family: var(--fonte-principal);
+    background-color: #D8DFE8;
+    color: var(--cor-secundaria);
+    transition: all 2s;
+}
+.input_botao0:hover, .input_botao1:hover {
+    cursor: pointer;
+    background-color: var(--cor-secundaria);
+    color: var(--cor-principal);
+}
+
+.resultado {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--cor-secundaria);
+    width: 24.2%;
+    height: 90%;
+    border-radius: 20px;
+    font-family: var(--fonte-principal);
+
+}
+.legolupa {
+    height: 50%;
+    background-color: transparent;
+    filter: drop-shadow(3px 2px 1px #f6f6f6);
+}
+.container_resultadoff{
+    display: flex;
+    flex-direction: column;
+    background-color: transparent;
+    color: var(--cor-principal);
+    height: 20%;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    gap: 40px;
+}
+.resultadoff_h1 {
+    font-family: var(--fonte-principal);
+    background-color: transparent;
+    font-size: 200%;
+    height: 100%;
+    text-align: center;
+}
+.resultadoff_p {
+    font-family: var(--fonte-principal);
+    background-color: transparent;
+    font-size: 140%;
+    text-align: center;
+}
+
+.result {
+    background-color: transparent;
+    resize: none;
+    border: none;
+    outline: none;
+    height: 75%;
+    margin-top: 10%;
+    font-size: 150%;
+    font-family: var(--fonte-principal);
+    color: var(--cor-principal);
+
+}
+.result:hover {
+    cursor: default;
+}
+
+.input_botao2 {
+    padding: 5%;
+    height: 10%;
+    width: 85%;
+    border-radius: 30px;
+    font-size: 100%;
+    font-family: var(--fonte-principal);
+    background-color: #D8DFE8;
+    color: var(--cor-secundaria);
+    transition: all 2s;
+}
+.input_botao2:hover {
+    cursor: pointer;
+    background-color: var(--cor-terciaria);
+}
+
+
+/*Tela tablet*/
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+
+/*Tela Desafio*/
+
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+   height: 100vh ;
+}
+
+.container_pai_challenge {
+    display: flex;
+    flex-direction: column;   
+    align-items: center;
+}
+
+.logo {
+    display: flex;
+    width: 100%;
+    height: 10%;
+    justify-content: start;
+    margin-left: 90px;
+    margin-top: 0;
+    font-family: "Micro 5", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 550%;
+}
+.logo:hover {
+    cursor:default;
+}
+
+.inputs_group {
+  display: flex ;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  width: 90%;
+  height: 55%;
+  margin-left: 0;
+  margin-right: 10px;
+}
+.texto_area {
+    resize: none;
+    border: none;
+    outline: none;
+    font-family: var(--fonte-principal);
+   font-size: 250%;
+   white-space: pre-line;
+   width: 100%;
+   height: 100%;
+   padding-bottom: 476px;
+   overflow: hidden;
+}
+.aviso_group {
+    display: flex;
+    height: 10%;
+    width: 100%;
+    flex-direction: row-reverse;
+    justify-content: start;
+    margin-left: 5%; 
+}
+
+.aviso {
+  font-family:Arial, Helvetica, sans-serif;
+  font-size: 110%;
+  margin-top: 0.5%;
+  margin-left: 2%;
+  max-height: 100%;
+}
+.aviso_icon {
+    font-size: 150%; 
+}
+
+.inputs_group_buttons {
+    height: 10%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 7%;
+}
+.input_botao0 {
+    height: 150%;
+    padding: 2% 15%;
+    border-radius: 30px;
+    font-size: 140%;
+    font-family: var(--fonte-principal);
+    color: var(--cor-principal);
+    background-color: var(--cor-terciaria);
+    transition: all 3s;
+    color: var(--cor-secundaria);
+}
+.input_botao1 {
+    height: 150%;
+    padding: 2% 12%;
+    border-radius: 30px;
+    font-size: 140%;
+    font-family: var(--fonte-principal);
+    background-color: #D8DFE8;
+    color: var(--cor-secundaria);
+    transition: all 2s;
+}
+.input_botao0:hover, .input_botao1:hover {
+    cursor: pointer;
+    background-color: var(--cor-secundaria);
+    color: var(--cor-principal);
+}
+
+.resultado {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--cor-secundaria);
+    width: 90%;
+    height: 34%;
+    border-radius: 20px;
+    font-family: var(--fonte-principal);
+
+}
+.legolupa {
+  display: none;
+}
+.container_resultadoff{
+    display: flex;
+    flex-direction: column;
+    background-color: transparent;
+    color: var(--cor-principal);
+    height: 20%;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    gap: 40px;
+}
+.resultadoff_h1 {
+    font-family: var(--fonte-principal);
+    background-color: transparent;
+    font-size: 200%;
+    height: 100%;
+    text-align: center;
+}
+.resultadoff_p {
+    font-family: var(--fonte-principal);
+    background-color: transparent;
+    font-size: 140%;
+    text-align: center;
+}
+
+.result {
+    background-color: transparent;
+    resize: none;
+    border: none;
+    outline: none;
+    height: 75%;
+    width: 70%;
+    margin-top: 2%;
+    font-size: 200%;
+    font-family: var(--fonte-principal);
+    color: var(--cor-principal);
+
+}
+.result:hover {
+    cursor: default;
+}
+
+.input_botao2 {
+    padding: 5%;
+    height: 20%;
+    width: 85%;
+    border-radius: 30px;
+    font-size: 150%;
+    font-family: var(--fonte-principal);
+    background-color: #D8DFE8;
+    color: var(--cor-secundaria);
+    transition: all 2s;
+    margin-bottom: 5px;
+}
+.input_botao2:hover {
+    cursor: pointer;
+    background-color: var(--cor-terciaria);
+}
+
+}
+
+/*Tela celular*/
+@media screen and (max-width: 767px) {
+/*Tela Desafio*/
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+   height: 100vh ;
+}
+
+.container_pai_challenge {
+    display: flex;
+    flex-direction: column;   
+    align-items: center;
+}
+
+.logo {
+    display: flex;
+    width: 100%;
+    height: 10%;
+    justify-content: start;
+    margin-left: 90px;
+    margin-top: 0;
+    font-family: "Micro 5", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 450%;
+}
+.logo:hover {
+    cursor:default;
+}
+
+.inputs_group {
+  display: flex ;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  width: 80%;
+  height: 55%;
+  margin-left: 20%;
+}
+.texto_area {
+    resize: none;
+    border: none;
+    outline: none;
+    font-family: var(--fonte-principal);
+   font-size: 180%;
+   white-space: pre-line;
+   width: 100%;
+   height: 100%;
+   margin-top: 5%;
+   padding-bottom: 476px;
+   overflow: hidden;
+}
+.aviso_group {
+    display: flex;
+    height: 10%;
+    width: 100%;
+    flex-direction: row-reverse;
+    justify-content: start;
+    margin-left: 5%;
+    margin-bottom: 5%; 
+}
+
+.aviso {
+  font-family:Arial, Helvetica, sans-serif;
+  font-size: 80%;
+  margin-top: 0.5%;
+  max-height: 100%;
+}
+.aviso_icon {
+    font-size: 150%; 
+}
+
+.inputs_group_buttons {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    margin-left: 5%;
+    gap: 15px;
+}
+.input_botao0 {
+    height: 150%;
+    padding: 3% 33%;
+    border-radius: 30px;
+    font-size: 120%;
+    font-family: var(--fonte-principal);
+    color: var(--cor-principal);
+    background-color: var(--cor-terciaria);
+    transition: all 3s;
+    color: var(--cor-secundaria);
+}
+.input_botao1 {
+    height: 150%;
+    padding: 3% 30%;
+    border-radius: 30px;
+    font-size: 120%;
+    font-family: var(--fonte-principal);
+    background-color: #D8DFE8;
+    color: var(--cor-secundaria);
+    transition: all 2s;
+}
+.input_botao0:hover, .input_botao1:hover {
+    cursor: pointer;
+    background-color: var(--cor-secundaria);
+    color: var(--cor-principal);
+}
+
+.resultado {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--cor-secundaria);
+    width: 90%;
+    height: 30%;
+    border-radius: 20px;
+    font-family: var(--fonte-principal);
+    margin-top: 38%;
+    margin-left: 10%;
+
+}
+.legolupa {
+  display: none;
+}
+.container_resultadoff{
+    display: flex;
+    flex-direction: column;
+    background-color: transparent;
+    color: var(--cor-principal);
+    height: 20%;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    gap: 40px;
+}
+.resultadoff_h1 {
+    font-family: var(--fonte-principal);
+    background-color: transparent;
+    font-size: 120%;
+    height: 100%;
+    text-align: center;
+}
+.resultadoff_p {
+    font-family: var(--fonte-principal);
+    background-color: transparent;
+    font-size: 120%;
+    text-align: center;
+}
+
+.result {
+    background-color: transparent;
+    resize: none;
+    border: none;
+    outline: none;
+    height: 100%;
+    width: 70%;
+    margin-top: 5%;
+    font-size: 120%;
+    font-family: var(--fonte-principal);
+    color: var(--cor-principal);
+
+}
+.result:hover {
+    cursor: default;
+}
+
+.input_botao2 {
+    padding: 1%;
+    height: 25%;
+    width: 80%;
+    border-radius: 30px;
+    font-size: 120%;
+    font-family: var(--fonte-principal);
+    background-color: #D8DFE8;
+    color: var(--cor-secundaria);
+    transition: all 2s;
+    margin-bottom: 5px;
+}
+.input_botao2:hover {
+    cursor: pointer;
+    background-color: var(--cor-terciaria);
+}
+
+}   

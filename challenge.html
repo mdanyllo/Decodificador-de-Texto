@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <link rel="stylesheet" href="./styles/stylechallenge.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Decodificando o texto</title>
+</head>
+<body>
+    
+    <main class="container_pai_challenge">
+        <div class="logo" title="Logo Markus Danyllo">MD</div>
+        <section class="inputs_group">
+            <textarea id="texto_input" class="texto_area" placeholder="Digite seu texto.." cols="30" rows="10"></textarea>
+            <section class="aviso_group">
+                <p class="aviso">Apenas letras minúsculas e sem acento.</p>
+                <ion-icon class="aviso_icon" name="alert"></ion-icon>
+            </section>
+            <section class="inputs_group_buttons" >
+                <button class="input_botao0" onclick="criptografar()">Criptografar</button>
+                <button class="input_botao1" onclick="descriptografar()">Descriptografar</button>
+            </section>
+        </section>
+
+        <div class="resultado" id="texto_output">
+            <img class="legolupa" src="./img/legoduvida.png" alt="">
+            <section class="container_resultadoff">
+                <h1 class="resultadoff_h1">Nenhuma mensagem encontrada</h1>
+                <p class="resultadoff_p">Digite um texto que você deseja criptografar ou descriptografar</p>
+            </section>
+        </div>
+
+    </main>
+
+    <script src="./app.js"></script>
+    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+</body>
+</html>
